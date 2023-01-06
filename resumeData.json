@@ -1,45 +1,45 @@
 {
     "main": {
-        "name": "Fahdil Ahady Hazain",
+        "name": "Malikil Mulki Sjarif",
         "occupation": "this occupation is where",
-        "description": "a software engineer, automation engineer",
+        "description": "a software engineer",
         "image": "profilepic.jpg",
-        "bio": "Hello My name Fahdil Ahady Hazain, I am super Hero",
+        "bio": "Hello My name Malikil Mulki Sjarif, usually my friends called me Mulki",
         "contactmessage": "Do not hesitate to to reach me any time.",
-        "email": "hazain.ahady@gmail.com",
-        "phone": "+62 87889507343",
+        "email": "malikilmulki@gmail.com",
+        "phone": "+62 85299971144",
         "address": {
-            "street": "Komp. Karang Tengah Permai Blok TJ/9",
-            "city": "Ciledug",
-            "state": "Jakarta",
-            "zip": ""
+            "street": "Jl. Syarif Al Qadri No. 1 Sinjai Utara",
+            "city": "Sinjai",
+            "state": "Sulawesi Selatan",
+            "zip": "92611"
         },
         "website": "",
         "resumedownload": "",
         "social": [
             {
                 "name": "facebook",
-                "url": "http://facebook.com/fahdilAhady",
+                "url": "http://facebook.com/malikilmulki",
                 "className": "fa fa-facebook"
             },
             {
                 "name": "google-plus",
-                "url": "http://googleplus.com/rakhasn",
+                "url": "http://googleplus.com/malikilmulki",
                 "className": "fa fa-google-plus"
             },
             {
                 "name": "linkedin",
-                "url": "https://www.linkedin.com/in/raka-settya-cahya-nugroho-952b76161/",
+                "url": "https://www.linkedin.com/in/malikilmulki/",
                 "className": "fa fa-linkedin"
             },
             {
                 "name": "instagram",
-                "url": "http://instagram.com/rakhasn",
+                "url": "http://instagram.com/malikil.mulki",
                 "className": "fa fa-instagram"
             },
             {
                 "name": "github",
-                "url": "http://github.com/fahdilahady",
+                "url": "http://github.com/malikilmulki",
                 "className": "fa fa-github"
             },
             {
@@ -53,16 +53,10 @@
         "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
         "education": [
             {
-                "school": "AMIKOM University",
+                "school": "STMIK Dipanegera",
                 "degree": "Bachelor Degree",
-                "graduated": "2016",
-                "description": "Chapter 2 from building fundamental programming technology to build some kraken and released."
-            },
-            {
-                "school": "Telkom Vocational School",
-                "degree": "Software Engineering",
-                "graduated": "2012",
-                "description": "Building fundamental about programming technology."
+                "graduated": "2011",
+                "description": "Sistem Informasi"
             }
         ],
         "work": [
