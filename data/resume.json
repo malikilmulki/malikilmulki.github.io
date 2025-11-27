@@ -1,28 +1,26 @@
 {
   "personal": {
-    "name": "Malikil Mulki Sjarif",
+    "name": "Malikil Mulki",
     "title": "Software Engineer",
     "location": "Jakarta, Indonesia",
     "email": "malikilmulki@programmer.net",
     "phone": "085299971144",
     "skype": "malikilmulki",
-    "photo": "images/profile.jpg"
+    "photo": "images/betrack.jpg",
+    "linkedin": "https://www.linkedin.com/in/malikilmulki",
+    "github": "https://github.com/malikilmulki",
+    "whatsapp": "6285299971144"
   },
   "about": {
     "summary": "Software Engineer with 10+ years of experience in .NET development, API programming, and relational database design. Strong background in ERP, HR systems, and customer engagement applications."
   },
-  "skills": [
-    "C#",
-    "VB.NET",
-    "T-SQL",
-    "ASP.NET MVC",
-    "SQL Server",
-    "JavaScript",
-    "jQuery",
-    "Bootstrap",
-    "API Development",
-    "Database Design"
-  ],
+  "skills": {
+    "Languages": "C#, VB.NET, T-SQL",
+    "Frameworks": ".NET Framework, ASP.NET MVC, Web Services",
+    "Databases": "SQL Server, RDBMS",
+    "Tools": "Visual Studio, DevExpress, Telerik Report",
+    "Practices": "OOP, API Development, SDLC, CI/CD, SCRUM"
+  },
   "projects": [
     {
       "title": "ERP Applications",
@@ -32,7 +30,7 @@
     {
       "title": "Customer Engagement",
       "description": "Built complaint management systems and delivered enhancements.",
-      "image": "images/project-customer.jpg"
+      "image": "https://placehold.co/600x400/png"
     },
     {
       "title": "Customer Engagement v2",
@@ -42,28 +40,47 @@
   ],
   "experience": [
     {
+      "position": "Software Engineer",
       "company": "Unit4",
-      "position": "Software Engineer",
-      "period": "2022 - Present",
-      "description": "Working on ERP solutions and enterprise applications."
+      "period": "Nov 2022 - Now",
+      "technologies": "C#, ASP.NET, SQL Server (T-SQL), PostgreSQL, Oracle, Azure",
+      "responsibilities": [
+        "Developed and maintained ERP applications for project and expense management using ASP.NET and SQL Server 2018, ensuring high performance and reliability.",
+        "Executed bug fixing and code refactoring, enhancing code quality, and reducing defects by 30%.",
+        "Implemented C# design patterns and clean coding practices, improving the maintainability and scalability of applications."
+      ]
     },
     {
-      "company": "Verint",
-      "position": "Software Engineer",
-      "period": "2018 - 2022",
-      "description": "Developed customer engagement and complaint management systems."
+      "position": "Senior Technical Consultant",
+      "company": "Verint System",
+      "period": "Dec 2018 - Oct 2022",
+      "technologies": "ASP.NET Core, C#, SQL Server (T-SQL), Angular",
+      "responsibilities": [
+        "Developed customer engagement solutions using ASP.NET and SQL Server 2018, enhancing system capabilities with new features.",
+        "Created deployment packages, and managed project publishing for seamless updates.",
+        "Trained in ASP.NET Core, Angular, ASP.NET Core MVC (.NET 6), gRPC, and Microservices."
+      ]
     },
     {
-      "company": "BIT",
-      "position": "Software Engineer",
-      "period": "2018",
-      "description": "Software development and system integration."
+      "position": "Senior Software Engineer",
+      "company": "Business Intelligence Technology",
+      "period": "Aug 2018 - Nov 2018",
+      "technologies": "ASP.NET MVC, C#, SQL Server (T-SQL)",
+      "responsibilities": [
+        "Developed eHR systems for payroll, attendance, and leave management using ASP.NET and SQL Server 2017.",
+        "Deployed applications to production environments."
+      ]
     },
     {
-      "company": "IDEMIA",
-      "position": "Software Engineer",
-      "period": "2013 - 2018",
-      "description": "Development of security and identity management systems."
+      "position": "Technical Leader",
+      "company": "Oberthur Technologies / IDEMIA",
+      "period": "Sep 2013 - July 2018",
+      "technologies": "C#, VB.NET, ASP.NET, WPF, SQL Server (T-SQL), VC++",
+      "responsibilities": [
+        "Designed and developed internal and customer-facing tools using ASP.NET, WPF, and SQL Server 2008.",
+        "Led a team in building smart card management and licensing systems, improving efficiency by 30%.",
+        "Created cryptographic APIs in VC++ for AES, DES, 3DES, RSA, and hashing, enhancing security protocols."
+      ]
     }
   ]
 }

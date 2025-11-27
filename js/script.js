@@ -14,16 +14,29 @@ $(document).ready(function() {
       '💬 Skype: ' + data.personal.skype
     );
     
+    // Update profile photo
+    if (data.personal.photo) {
+      $('.hero-img').css('background-image', 'url(' + data.personal.photo + ')');
+    }
+    
     // Update about section
     $('#about .card-text').text(data.about.summary);
     
     // Update skills
-    const skillsContainer = $('#skills .d-flex');
-    skillsContainer.empty();
-    data.skills.forEach(function(skill) {
-      skillsContainer.append('<span class="badge skill">' + skill + '</span>');
+    const skillsContainer = $('#skills .card-body');
+    // Remove existing skills but keep the title
+    skillsContainer.find('.skill-category').remove();
+    
+    // Add each skill category
+    $.each(data.skills, function(category, skills) {
+      const skillHtml = `
+        <div class="skill-category mb-2">
+          <strong>${category}:</strong> ${skills}
+        </div>
+      `;
+      skillsContainer.append(skillHtml);
     });
-    console.log('Skills updated:', data.skills.length);
+    console.log('Skills updated');
     
     // Update projects dynamically
     const projectsContainer = $('#projects .row');
@@ -52,23 +65,99 @@ $(document).ready(function() {
     
     console.log('Projects updated successfully');
     
-    // Update experience/resume section
-    const resumeContainer = $('#resume .card-text');
-    let experienceText = '';
-    data.experience.forEach(function(exp, index) {
-      experienceText += exp.company + ' (' + exp.period + ')';
-      if (index < data.experience.length - 1) {
-        experienceText += ', ';
-      }
-    });
-    resumeContainer.text(experienceText);
+    // Update experience/resume section with detailed timeline
+    const resumeContainer = $('#resume .card-body');
+    resumeContainer.find('.experience-timeline').remove();
     
-    // Update contact section
-    $('#contact .card-text').text(
-      'Email: ' + data.personal.email + ' | ' +
-      'Phone: ' + data.personal.phone + ' | ' +
-      'Skype: ' + data.personal.skype
-    );
+    let experienceHtml = '<div class="experience-timeline">';
+    data.experience.forEach(function(exp, index) {
+      experienceHtml += `
+        <div class="experience-item">
+          <div class="experience-header">
+            <div class="experience-title">
+              <i class="fas fa-circle experience-bullet"></i>
+              <h5>${exp.position}</h5>
+            </div>
+            <span class="experience-period">${exp.period}</span>
+          </div>
+          <div class="experience-company">${exp.company}</div>
+          <div class="experience-tech"><strong>Technologies:</strong> ${exp.technologies}</div>
+          <ul class="experience-responsibilities">
+            ${exp.responsibilities.map(resp => `<li>${resp}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    });
+    experienceHtml += '</div>';
+    resumeContainer.append(experienceHtml);
+    console.log('Experience updated');
+    
+    // Update contact section with links and icons
+    const contactContainer = $('#contact .card-body');
+    contactContainer.find('.contact-info').remove();
+    
+    const contactHtml = `
+      <div class="contact-info">
+        <p class="mb-4">Feel free to reach out to me through any of the following channels:</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <a href="mailto:${data.personal.email}" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-details">
+                <strong>Email</strong>
+                <span>${data.personal.email}</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="tel:+${data.personal.whatsapp}" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <div class="contact-details">
+                <strong>Phone</strong>
+                <span>${data.personal.phone}</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="https://wa.me/${data.personal.whatsapp}" target="_blank" class="contact-link">
+              <i class="fab fa-whatsapp"></i>
+              <div class="contact-details">
+                <strong>WhatsApp</strong>
+                <span>Message me</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="skype:${data.personal.skype}?chat" class="contact-link">
+              <i class="fab fa-skype"></i>
+              <div class="contact-details">
+                <strong>Skype</strong>
+                <span>${data.personal.skype}</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="${data.personal.linkedin}" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <div class="contact-details">
+                <strong>LinkedIn</strong>
+                <span>Connect with me</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="${data.personal.github}" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <div class="contact-details">
+                <strong>GitHub</strong>
+                <span>View my code</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+    contactContainer.append(contactHtml);
     
     console.log('All sections updated successfully');
   }).fail(function(jqxhr, textStatus, error) {
