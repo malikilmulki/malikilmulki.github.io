@@ -1,0 +1,69 @@
+{
+  "personal": {
+    "name": "Malikil Mulki Sjarif",
+    "title": "Software Engineer",
+    "location": "Jakarta, Indonesia",
+    "email": "malikilmulki@programmer.net",
+    "phone": "085299971144",
+    "skype": "malikilmulki",
+    "photo": "images/profile.jpg"
+  },
+  "about": {
+    "summary": "Software Engineer with 10+ years of experience in .NET development, API programming, and relational database design. Strong background in ERP, HR systems, and customer engagement applications."
+  },
+  "skills": [
+    "C#",
+    "VB.NET",
+    "T-SQL",
+    "ASP.NET MVC",
+    "SQL Server",
+    "JavaScript",
+    "jQuery",
+    "Bootstrap",
+    "API Development",
+    "Database Design"
+  ],
+  "projects": [
+    {
+      "title": "ERP Applications",
+      "description": "Developed ERP applications focused on project and expense management.",
+      "image": "images/project-erp.jpg"
+    },
+    {
+      "title": "Customer Engagement",
+      "description": "Built complaint management systems and delivered enhancements.",
+      "image": "images/project-customer.jpg"
+    },
+    {
+      "title": "Customer Engagement v2",
+      "description": "Built complaint management systems and delivered enhancements.",
+      "image": "images/project-customer.jpg"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Unit4",
+      "position": "Software Engineer",
+      "period": "2022 - Present",
+      "description": "Working on ERP solutions and enterprise applications."
+    },
+    {
+      "company": "Verint",
+      "position": "Software Engineer",
+      "period": "2018 - 2022",
+      "description": "Developed customer engagement and complaint management systems."
+    },
+    {
+      "company": "BIT",
+      "position": "Software Engineer",
+      "period": "2018",
+      "description": "Software development and system integration."
+    },
+    {
+      "company": "IDEMIA",
+      "position": "Software Engineer",
+      "period": "2013 - 2018",
+      "description": "Development of security and identity management systems."
+    }
+  ]
+}
