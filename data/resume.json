@@ -46,6 +46,11 @@
       "title": "Point of Sales System",
       "description": "Developed a complete POS system with inventory management, sales tracking, and reporting capabilities using VB.NET and MySQL. Streamlined retail operations with barcode scanning and receipt printing.",
       "image": "images/project-pos.svg"
+    },
+    {
+      "title": "Smart Card Applications Suite",
+      "description": "Developed comprehensive smart card management tools including SIM Studio (WPF/MVVM with PRISM 6), License Manager, and eKTP reader applications using C#, VB.NET, and VC++. Built cryptography framework with AES/DES/RSA encryption, remote card reader simulator, and personalization tools integrated with SQL Server.",
+      "image": "images/project-smartcard.svg"
     }
   ],
   "experience": [
