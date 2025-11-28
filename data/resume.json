@@ -25,17 +25,17 @@
     {
       "title": "ERP Applications",
       "description": "Developed ERP applications focused on project and expense management.",
-      "image": "images/project-erp.jpg"
+      "image": "images/project-erp.png"
     },
     {
       "title": "Customer Engagement",
       "description": "Built complaint management systems and delivered enhancements.",
-      "image": "https://placehold.co/600x400/png"
+      "image": "images/project-customer.png"
     },
     {
-      "title": "Customer Engagement v2",
-      "description": "Built complaint management systems and delivered enhancements.",
-      "image": "images/project-customer.jpg"
+      "title": "HR System",
+      "description": "Developed comprehensive eHR system for payroll, attendance, and leave management using ASP.NET and SQL Server.",
+      "image": "images/project-hr.png"
     }
   ],
   "experience": [
