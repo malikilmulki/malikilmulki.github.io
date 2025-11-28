@@ -1,0 +1,40 @@
+<svg width="400" height="225" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="225" fill="#E0D6CA"/>
+  
+  <!-- Circle Border -->
+  <circle cx="200" cy="112.5" r="90" fill="none" stroke="#b08d57" stroke-width="3"/>
+  
+  <!-- Customer Icon -->
+  <g transform="translate(200, 112.5) scale(0.9)">
+    <!-- Person Head -->
+    <circle cx="0" cy="-30" r="20" fill="#b08d57"/>
+    
+    <!-- Person Body -->
+    <path d="M -30 10 Q -30 -10 0 -10 Q 30 -10 30 10 L 30 30 L -30 30 Z" fill="#b08d57"/>
+    
+    <!-- Connection Icons -->
+    <!-- Heart (left) -->
+    <g transform="translate(-60, -20)">
+      <path d="M 0,-5 C -3,-8 -8,-8 -10,-5 C -12,-2 -12,2 -8,6 L 0,12 L 8,6 C 12,2 12,-2 10,-5 C 8,-8 3,-8 0,-5 Z" fill="#b08d57"/>
+    </g>
+    
+    <!-- User Group (right) -->
+    <g transform="translate(60, -20)">
+      <circle cx="-8" cy="0" r="6" fill="#b08d57"/>
+      <circle cx="8" cy="0" r="6" fill="#b08d57"/>
+      <ellipse cx="0" cy="12" rx="20" ry="8" fill="#b08d57"/>
+    </g>
+    
+    <!-- Chat Bubble (top) -->
+    <g transform="translate(0, -65)">
+      <rect x="-15" y="-10" width="30" height="20" rx="4" fill="#b08d57"/>
+      <polygon points="0,10 -5,15 5,15" fill="#b08d57"/>
+    </g>
+    
+    <!-- Connection Lines -->
+    <line x1="-30" y1="-15" x2="-50" y2="-20" stroke="#b08d57" stroke-width="2"/>
+    <line x1="30" y1="-15" x2="50" y2="-20" stroke="#b08d57" stroke-width="2"/>
+    <line x1="0" y1="-50" x2="0" y2="-60" stroke="#b08d57" stroke-width="2"/>
+  </g>
+</svg>

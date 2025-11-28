@@ -1,0 +1,51 @@
+<svg width="400" height="225" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="225" fill="#E0D6CA"/>
+  
+  <!-- Circle Border -->
+  <circle cx="200" cy="112.5" r="90" fill="none" stroke="#b08d57" stroke-width="3"/>
+  
+  <!-- HR System Icon -->
+  <g transform="translate(200, 112.5) scale(0.9)">
+    <!-- Main People Group -->
+    <!-- Person 1 (Left) -->
+    <g transform="translate(-40, 0)">
+      <circle cx="0" cy="-20" r="12" fill="#b08d57"/>
+      <path d="M -15 5 Q -15 -10 0 -10 Q 15 -10 15 5 L 15 20 L -15 20 Z" fill="#b08d57"/>
+    </g>
+    
+    <!-- Person 2 (Center) -->
+    <g transform="translate(0, -10)">
+      <circle cx="0" cy="-20" r="14" fill="#b08d57"/>
+      <path d="M -18 5 Q -18 -12 0 -12 Q 18 -12 18 5 L 18 25 L -18 25 Z" fill="#b08d57"/>
+    </g>
+    
+    <!-- Person 3 (Right) -->
+    <g transform="translate(40, 0)">
+      <circle cx="0" cy="-20" r="12" fill="#b08d57"/>
+      <path d="M -15 5 Q -15 -10 0 -10 Q 15 -10 15 5 L 15 20 L -15 20 Z" fill="#b08d57"/>
+    </g>
+    
+    <!-- HR Icons -->
+    <!-- Clock (top left) -->
+    <g transform="translate(-60, -50)">
+      <circle cx="0" cy="0" r="12" stroke="#b08d57" stroke-width="2" fill="none"/>
+      <line x1="0" y1="0" x2="0" y2="-6" stroke="#b08d57" stroke-width="2"/>
+      <line x1="0" y1="0" x2="5" y2="0" stroke="#b08d57" stroke-width="2"/>
+    </g>
+    
+    <!-- Money/Payroll (top right) -->
+    <g transform="translate(60, -50)">
+      <rect x="-12" y="-8" width="24" height="16" rx="2" stroke="#b08d57" stroke-width="2" fill="none"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#b08d57">$</text>
+    </g>
+    
+    <!-- Document/Leave (bottom) -->
+    <g transform="translate(0, 45)">
+      <rect x="-10" y="-12" width="20" height="24" rx="2" fill="#b08d57"/>
+      <line x1="-6" y1="-6" x2="6" y2="-6" stroke="#E0D6CA" stroke-width="1.5"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#E0D6CA" stroke-width="1.5"/>
+      <line x1="-6" y1="6" x2="6" y2="6" stroke="#E0D6CA" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

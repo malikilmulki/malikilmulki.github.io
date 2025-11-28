@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
+  <!-- Background -->
+  <rect width="400" height="225" fill="#E0D6CA"/>
+  
+  <!-- Circular border -->
+  <circle cx="200" cy="112.5" r="90" fill="none" stroke="#b08d57" stroke-width="3"/>
+  
+  <!-- Content scaled and centered -->
+  <g transform="translate(200, 112.5) scale(0.9) translate(-200, -112.5)">
+    <!-- Cash Register/POS Terminal -->
+    <rect x="150" y="80" width="100" height="70" fill="#b08d57" rx="5"/>
+    <rect x="155" y="85" width="90" height="40" fill="#f5ede6"/>
+    
+    <!-- Keypad -->
+    <g fill="#666">
+      <rect x="160" y="130" width="12" height="8" rx="1"/>
+      <rect x="175" y="130" width="12" height="8" rx="1"/>
+      <rect x="190" y="130" width="12" height="8" rx="1"/>
+      <rect x="205" y="130" width="12" height="8" rx="1"/>
+      <rect x="220" y="130" width="12" height="8" rx="1"/>
+      
+      <rect x="160" y="140" width="12" height="8" rx="1"/>
+      <rect x="175" y="140" width="12" height="8" rx="1"/>
+      <rect x="190" y="140" width="12" height="8" rx="1"/>
+      <rect x="205" y="140" width="12" height="8" rx="1"/>
+      <rect x="220" y="140" width="12" height="8" rx="1"/>
+    </g>
+    
+    <!-- Receipt paper -->
+    <rect x="200" y="65" width="30" height="40" fill="#fff" stroke="#b08d57" stroke-width="2"/>
+    <line x1="205" y1="72" x2="225" y2="72" stroke="#666" stroke-width="1"/>
+    <line x1="205" y1="77" x2="225" y2="77" stroke="#666" stroke-width="1"/>
+    <line x1="205" y1="82" x2="225" y2="82" stroke="#666" stroke-width="1"/>
+    <line x1="205" y1="87" x2="225" y2="87" stroke="#666" stroke-width="1"/>
+    <line x1="205" y1="92" x2="225" y2="92" stroke="#666" stroke-width="1"/>
+    <line x1="205" y1="97" x2="225" y2="97" stroke="#666" stroke-width="1"/>
+    
+    <!-- Shopping cart icon -->
+    <g transform="translate(120, 95)">
+      <circle cx="5" cy="20" r="3" fill="#b08d57"/>
+      <circle cx="15" cy="20" r="3" fill="#b08d57"/>
+      <path d="M 0,0 L 4,0 L 7,15 L 18,15 L 20,5 L 6,5" fill="none" stroke="#b08d57" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    
+    <!-- Barcode scanner -->
+    <rect x="255" y="105" width="25" height="15" fill="#b08d57" rx="3"/>
+    <line x1="265" y1="120" x2="265" y2="130" stroke="#b08d57" stroke-width="2"/>
+    
+    <!-- Barcode lines -->
+    <g transform="translate(260, 108)" fill="#fff">
+      <rect x="0" y="0" width="1" height="8"/>
+      <rect x="2" y="0" width="2" height="8"/>
+      <rect x="5" y="0" width="1" height="8"/>
+      <rect x="7" y="0" width="1" height="8"/>
+      <rect x="9" y="0" width="2" height="8"/>
+      <rect x="12" y="0" width="1" height="8"/>
+      <rect x="14" y="0" width="1" height="8"/>
+    </g>
+    
+    <!-- Dollar sign -->
+    <text x="175" y="110" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#f5ede6">$</text>
+  </g>
+</svg>
